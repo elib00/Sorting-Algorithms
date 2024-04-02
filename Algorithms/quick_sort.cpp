@@ -1,3 +1,5 @@
+//visualization referenec - https://youtu.be/WprjBK0p6rw?si=XgTcH_3caIv8GvB9
+
 #include "sorting_algorithm.cpp"
 
 using namespace std;
@@ -23,10 +25,6 @@ class QuickSort : public SortingAlgorithm {
             }
         }
 
-        // swap(array[newPivot - 1], array[pivot]);
-
-        //18 29 27 19 0 11 12 17 18 19 20 128;
-        //size = 7
         sort(array, start, newPivot - 1);
         sort(array, newPivot + 1, pivot);
     }
